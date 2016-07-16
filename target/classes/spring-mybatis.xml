@@ -25,13 +25,13 @@
 	<!-- c3p0 -->
 	
 	<bean id="datasource" class="com.mchange.v2.c3p0.ComboPooledDataSource"   destroy-method="close">
-         <property name="driverClass" value="${jdbc.driverClassName}"/>
+         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
          
-         <property name="jdbcUrl" value="${jdbc.url}"/>   
+         <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/user"/>   
                     
-         <property name="user" value="${jdbc.username}"/>
+         <property name="user" value="root"/>
          
-         <property name="password" value="${jdbc.password}" />
+         <property name="password" value="296198" />
          
          <property name="minPoolSize"><value>1</value></property>
          <!--连接池中保留的最大连接数。Default: 15 -->

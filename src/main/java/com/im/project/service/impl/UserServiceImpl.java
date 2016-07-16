@@ -9,6 +9,10 @@ import com.im.project.service.UserService;
 public class UserServiceImpl implements UserService {
 	@Resource
 	private UserMapper userDao;
+	/**
+	 * 存储user
+	 * 
+	 */
 	public int save(User user) {
 		System.out.println("save");
 		int userFlag = userDao.insert(user);

@@ -12,7 +12,12 @@ import com.sdicons.json.mapper.MapperException;
 import com.sdicons.json.model.JSONArray;
 import com.sdicons.json.model.JSONValue;
 import com.sdicons.json.parser.JSONParser;
-
+/**
+ * 
+ * 处理数据的工具返回json给前端
+ * @author zhoujun
+ *
+ */
 
 public class JSONUtils {
 	private static final String ServletActionContext = null;
